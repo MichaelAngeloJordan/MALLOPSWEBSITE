@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    background-image: url(pinkGradient.jpg);
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+.home-button {
+    position: fixed;
+    left: 15px;
+    top: 10px;
+    z-index: 999;
+    font-size: 30px;
+}
+.container {
+    background:  linear-gradient(
+    to right,
+    #8bbfbd, #ffffff
+    );
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 50px; 
+    width: 80%; 
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.text {
+    font-size: 18px;
+}
+
+.claim-button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.claim-button:hover {
+    background-color: #45a049;
+}
+
+.container-row {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.sub-container {
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #ffd2d2;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.sub-claim-button {
+    font-size: 16px;
+    background-color: #4caf50;
+    color: white;
+    border: none;   
+}
+.sub-text {
+    font-size: 20px;
+}
+
+.message {
+    margin-top: 20px;
+    color: red;
+    font-weight: bold;
+}

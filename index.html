@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title></title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+    
+    <style media="screen">
+        *:before,
+        *:after {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-image: url("pinkGradient.jpg");
+        }
+        .background {
+            width: 430px;
+            height: 520px;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            left: 50%;
+            top: 50%;
+        }
+        .background .shape {
+            height: 200px;
+            width: 200px;
+            position: absolute;
+            border-radius: 50%;
+        }
+
+        .shape:first-child {
+            background: linear-gradient(
+                to left,
+                #ff00ee,
+                #f398eb
+            );
+            left: -110px;
+            top: -150px;
+        }
+
+        .shape:nth-child(2) {
+            background: linear-gradient(
+                to right,
+                #ff512f,
+                #f09819
+            );
+            right: -110px;
+            bottom: -150px;
+        }
+
+        .shape:nth-child(3) {
+            background: linear-gradient(
+                to left,
+                #fffb00,
+                #e3c59a
+            );
+            left: -200px;
+            bottom: 50px;
+        }
+
+        .shape:nth-child(4) {
+            background: linear-gradient(
+                to left,
+                #00b7fa,
+                #7c9bf9
+            );
+            right: -300px;
+            bottom: 50px;
+        }
+
+        .shape:nth-child(5) {
+            background: linear-gradient(
+                to right,
+                #ff2a00,
+                #eb6e6c
+            );
+            right: -200px;
+            top: 25px;
+        }
+
+        .shape:nth-child(6) {
+            background: linear-gradient(
+                to right,
+                #66ff00,
+                #95fb93
+            );
+            left: -300px;
+            top: 50px;
+        }
+        form {
+            height: 520px;
+            width: 400px;
+            background-color: rgba(255, 255, 255, 0);
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            border: 2px solid rgba(56, 56, 56, 0.35);
+            box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+            padding: 50px 35px;
+        }
+        form * {
+            font-family: 'Poppins', Arial, Helvetica, sans-serif;
+            color: #570101;
+            letter-spacing: 0.5px;
+            outline: none;
+            border: none;
+        }
+        form a {
+            font-size: 17px;
+            font-weight: 500;
+            line-height: 42px;
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-top: 30px;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        input {
+            display: block;
+            height: 50px;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.07);
+            border-radius: 3px;
+            padding: 0 10px;
+            margin-top: 8px;
+            font-size: 14px;
+            font-weight: 300;
+        }
+        ::placeholder {
+            color: #e5e5e5;
+        }
+        button {
+            margin-top: 20px;
+            width: 100%;
+            background-color: #ffffff;
+            color: #570101;
+            padding: 10px 0;
+            font-size: 18px;
+            font-weight: 600;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .social {
+            margin-top: 30px;
+            display: flex;
+        }
+        .social div {
+            background: red;
+            width: 150px;
+            border-radius: 3px;
+            padding: 5px 10px 10px 5px;
+            background-color: rgba(255, 255, 255, 0.27);
+            color: #570101;
+            text-align: center;
+        }
+        .social div:hover {
+            background-color: rgba(255, 255, 255, 0.47);
+        }
+        .social .fb {
+            margin-left: 70px; 
+        }
+        .social i {
+            margin-right: 4px;
+        }
+        form h5 {
+            padding-top: 20px;
+            padding-left: 100px;
+        }
+        h3 {
+            text-align: center;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+<div class="background">
+    <div class="shape"></div>
+    <div class="shape"></div>
+    <div class="shape"></div>
+    <div class="shape"></div>
+    <div class="shape"></div>
+    <div class="shape"></div>
+</div>
+
+<form action="claimpage.html" method="post" id="login-form">
+    <h3>MALLOPS</h3>
+
+    <label for="username">Username</label>
+    <input type="text" placeholder="Email or Phone" id="username">
+    
+    <label for="password">Password</label>
+    <input type="password" placeholder="Password" id="password">
+
+    <div>   
+        <a href="fpassword.html">Forgot Password?</a>
+    </div>
+
+    <button type="submit">Log In</button>
+    
+    <div class="social">
+        <div class="go"><i class="fab fa-google"></i>  Google</div>
+        <div class="fb"><i class="fab fa-facebook"></i>  Facebook</div>
+    </div>
+</form>
+
+<script>
+    document.getElementById("login-form").addEventListener("submit", function(event) {
+        event.preventDefault(); 
+        
+        const username = document.getElementById("username").value;
+        const password = document.getElementById("password").value;
+
+        if (username === "Kelompok2" && password === "123456") {
+            window.location.href = "homepage.html";
+        } else {
+            alert("Invalid username or password. Please try again.");
+        }
+    });
+</script>
+</body>
+</html>

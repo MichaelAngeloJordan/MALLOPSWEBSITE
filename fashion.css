@@ -1,0 +1,84 @@
+.jenistoko {
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+    margin: 10px;
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .container-row{
+      display: inline-flex;
+    }
+  
+    .star-icon {
+      color: gold;
+      font-size: 20px;
+      
+    }
+  
+  .toko {
+      text-align: center;
+      font-weight: bold;
+      font-size: 25px;
+      margin-bottom: 3px;
+    }
+  
+    .store-description {
+      margin-top: 1px;
+      margin-bottom: 3px;
+      text-align: center;
+      font-size: 15px;
+    }
+  
+   .store-rating {
+    text-align: center;
+    font-size: 15px;
+   }
+  
+   .store {
+    border: 2px solid #570101; 
+    border-radius: 20px;
+    padding: 5px;
+    margin: 10px;
+    width: 590px;
+    justify-content: center;
+    background-color: #570101; 
+  }
+  
+  
+  .search-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    border: 1px solid #ccc;
+    width: 300px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  #searchInput {
+    border: none;
+    margin-right: 10px;
+    padding: 5px;
+  }
+  
+  #searchButton {
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  #searchButton:hover {
+    background-color: #0056b3;
+  }
+  
+  #searchResults {
+    margin-top: 20px;
+  }
